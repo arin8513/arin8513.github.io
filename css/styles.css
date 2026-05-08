@@ -280,14 +280,20 @@ body.light-theme {
 }
 
 .nav__menu {
-  position: fixed;
+ position: fixed;
   bottom: 1rem;
   background-color: hsla(var(--second-hue), 32%, 16%, 0.8);
   width: 90%;
+  left: 50%;
+  transform: translateX(-50%) !important;
   border-radius: 4rem;
   padding: 1rem 2.25rem;
   backdrop-filter: blur(10px);
   transition: 0.4s;
+  -webkit-transform: translateX(-50%) !important;
+  -moz-transform: translateX(-50%) !important;
+  -ms-transform: translateX(-50%) !important;
+  -o-transform: translateX(-50%) !important;
 }
 
 .nav__list {
@@ -1045,8 +1051,6 @@ body.light-theme {
 @media (min-width: 630px) {
   .nav__menu {
     width: 328px;
-    right: 0;
-    left: 0;
     margin: 0 auto;
   }
 
